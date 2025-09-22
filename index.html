@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang cá nhân</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome để dùng icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Thanh taskbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌐 MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#hobbies">Sở thích</a></li>
+        <li class="dropdown">
+          <a href="#">Khác ⬇</a>
+          <ul class="dropdown-content">
+            <li><a href="#projects">Dự án</a></li>
+            <li><a href="#links">Liên kết</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Nút đổi theme -->
+  <button id="themeToggle">🌙</button>
+
+  <!-- Thanh progress bar -->
+  <div id="progressBar"></div>
+
+  <!-- Phần giới thiệu -->
+  <section id="about" class="section about-flex">
+    <div class="about-img">
+      <img src="images/z7036576807924_f9f8d8162667f253d00b0cbb4ce0c904.jpg" alt="Ảnh cá nhân" class="profile-img">
+    </div>
+    <div class="about-text">
+      <h1>Xin chào, mình là Việt 👋</h1>
+      <p>
+        Mình là sinh viên ngành Trí tuệ nhân tạo, ước mơ của mình là trở thành kỹ sư khoa học máy tính. 
+        Mình đặc biệt yêu thích các dự án về thị giác máy tính và phát triển web. 
+      </p>
+    </div>
+  </section>
+
+  <!-- Phần sở thích -->
+  <section id="hobbies" class="section">
+    <h2>Sở thích 🎯</h2>
+    <p class="hobby-intro">
+      Ngoài việc học tập và nghiên cứu, mình thường dành thời gian cho những sở thích 
+      giúp bản thân vừa thư giãn vừa nâng cao kỹ năng công nghệ.
+    </p>
+    <div class="hobby-list">
+      <div class="hobby">
+        <i class="fas fa-brain fa-3x" style="color:#4db6ac;"></i>
+        <p>Khám phá thị giác máy tính</p>
+      </div>
+      <div class="hobby">
+        <i class="fas fa-laptop-code fa-3x" style="color:#64b5f6;"></i>
+        <p>Phát triển dự án web</p>
+      </div>
+      <div class="hobby">
+        <i class="fas fa-lightbulb fa-3x" style="color:#ffd54f;"></i>
+        <p>Tìm hiểu AI qua sách</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phần dự án -->
+  <section id="projects" class="section">
+    <h2>Một số dự án 💻</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>👁️ Hệ thống nhận diện trái cây</h3>
+        <p>Ứng dụng YOLO để phân loại và nhận diện các loại trái cây trong ảnh.</p>
+      </div>
+      <div class="project">
+        <h3>🌐 Website cá nhân</h3>
+        <p>Portfolio cá nhân triển khai trên GitHub Pages với HTML, CSS, JS.</p>
+      </div>
+      <div class="project">
+        <h3>🤖 Chatbot AI</h3>
+        <p>Chatbot hỗ trợ tư vấn du lịch sử dụng LSTM và Flask API.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phần liên kết -->
+  <section id="links" class="section">
+    <h2>Kết nối với mình 🌍</h2>
+    <div class="social-links">
+      <a href="https://www.facebook.com/viet.dell?locale=vi_VN" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://github.com/Kysitaiba" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Phần liên hệ -->
+  <section id="contact" class="section">
+    <h2>Liên hệ 📧</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Tên của bạn" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Nội dung..." required></textarea>
+      <button type="submit">Gửi</button>
+    </form>
+    <p>Email: 21E1010013@hueuni.edu.vn</p>
+  </section>
+
+  <!-- Nút cuộn lên đầu -->
+  <button id="scrollTopBtn">⬆</button>
+
+  <script src="styles/main.js"></script>
+</body>
+</html>
